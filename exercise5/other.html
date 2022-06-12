@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Others</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" >Home</a>
+        <a href="aboutme.html" >About Me</a>
+        <a href="expectation.html" >Expectations</a>
+        <a href="other.html" class="active">Others</a>
+    </nav>
+
+    <h1>Too much information</h1>
+    <hr />
+    <a href="https://newsinhealth.nih.gov/2021/04/good-sleep-good-health#:~:text=Good%20sleep%20improves%20your%20brain,spent%20in%20bed%2C%20says%20Dr." target="_blank"><img src="https://a-z-animals.com/media/2021/12/Animals-in-Movies-sloth.jpg" height="300" width="600"></a>    
+    <p>I don't do much on my free time but I do enjoy doing nothing.</p>
+
+    <!-- Created a button for a simple pop out window for interaction. -->
+    <form>
+        <input type="button" value="Nudge me" onClick="alert('Yes I am here!')">
+    </form>
+
+    <h2>Suggestions of things for me to try out</h2>
+    <hr />
+    <div>    
+        <label><strong>Feedback:</strong></label>    
+    </div>
+
+    <!-- Created a form to ask for suggestions, using post method to ensure privacy-->   
+    <form method="post" target="_blank">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="qwerty"><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="qwerty@gmail.com"><br />
+
+        <label for="feedback">Suggestion:</label>
+        <textarea name="feedback" id="feedback" rows="5" cols="40" placeholder="Suggest me something, anything :)"></textarea>
+
+        <br />
+        <label>Do you mind if I ask for more information via Email?</label>
+        <input type="radio" name="ask" value="yes">Yes
+        <input type="radio" name="ask" value="no" checked>No
+
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+
+</body>
+</html>

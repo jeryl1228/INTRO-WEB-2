@@ -1,0 +1,42 @@
+body
+{
+    background-color:skyblue;
+}
+
+p, ul, li
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:purple;
+}
+
+h1, h2
+{
+    color:darkviolet;
+}
+
+a
+{
+    padding: 5px;
+}
+
+nav
+{
+    background-color:rgb(144, 132, 132);
+    padding: 5px;
+}
+
+a:hover
+{
+    color:darkviolet;
+}
+
+.active
+{
+    background-color:violet;
+}
+
+hr
+{
+    color:purple;
+}

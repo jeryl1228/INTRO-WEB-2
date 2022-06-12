@@ -1,0 +1,33 @@
+body
+{
+    background-color: #f0f0f0; 
+    background-image: url("https://w7.pngwing.com/pngs/751/271/png-transparent-partially-cloudy-skies-during-day-light-blue-sky-blue-desktop-sky-blue-atmosphere-cloud.png");
+    background-size: cover; 
+    background-repeat:no-repeat;
+    background-position: center;  
+}
+
+div.Reservation 
+{
+        width: 100%;
+    height: 100%;
+    background-color: #cdc5f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1, h2
+{
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+p
+{
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}

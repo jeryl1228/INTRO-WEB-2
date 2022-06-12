@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Destination Travel Reservation</title>
+</head>
+<body>
+    <h1>Destination Travel Reservation</h1>
+    <h2>Welcome to Destination</h2>
+    <hr />
+
+    <!-- used div class to separate code, also the start of form-->
+    <div class="Reservation">
+        <p>Please enter your credentials to reserve a seat on a flight.</p>
+        <form action="travel_reservation.php" method="post">
+        <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        </p>
+        <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+        <label for="telephone">Telephone:</label>
+        <input type="tel" name="telephone" id="telephone" required>
+        </p>
+        <p>
+        <label for="numberoftickets">No. of Tickets:</label>
+        <input type="number" name="numberoftickets" id="numberoftickets" required min="1" max="8">
+        </p>
+        <p>
+        <label for="flight">Flight:</label>
+        <select name="flight" id="flight" required>
+            <option value="SQ913">SQ913 - Singapore to Bangkok</option>
+            <option value="SQ912">SQ912 - Singapore to Taiwan</option>
+            <option value="SQ910">SQ910 - Singapore to Seoul</option>
+        </select>
+        </p>
+        <p>
+        <label for="departure">Departure:</label>
+        <input type="date" name="departure" id="departure" min="2022-06-06" required>
+        </p>
+        <p>
+        <label for="return">Return:</label>
+        <input type="date" name="return" id="return" min="2022-06-06" required>
+        </p>
+        <p>
+        <label for="class">Class:</label>
+        <select name="class" id="class" required>
+            <option value="First">First Class</option>
+            <option value="Business">Business Class</option>
+            <option value="Economy">Economy Class</option>
+        </select>
+        </p>
+
+        <p>
+        <label>Payment Method:</label>
+        <input type="radio" name="payment" id="mastercard" value="mastercard" checked>
+        <label for="mastercard">MasterCard</label>
+        <input type="radio" name="payment" id="visa" value="visa">
+        <label for="visa">VISA</label>
+        <input type="radio" name="payment" id="cash" value="cash">
+        <label for="cash">Cash</label>
+        </p>          
+
+        <p>
+        <label>Preferred platform for Updates:</label>
+        <input type="radio" name="notification" id="notification" value="email" checked required>
+        <label for="notification">Email</label>
+        <input type="radio" name="notification" id="sms" value="sms">
+        <label for="sms">SMS</label>
+        <hr />
+        <p>
+        <button type="submit" value="reserve">Proceed</button>
+        <button type="reset" value="clear">Clear</button>
+        </p>
+        </form>
+    </div>    
+</body>
+</html>
+
